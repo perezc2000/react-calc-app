@@ -12,7 +12,7 @@ const App = () => {
 
   const items = _words(stack, /[^-^+^*^/]+/g);
 
-  const value = items.length > 0 ? items[items.length - 1] : 0;
+  const value = items.length > 0 ? items[items.length - 1].toString() : "0";
 
   const onClickNumberFunction = (number) => {
     setStack(`${stack}${number}`);
